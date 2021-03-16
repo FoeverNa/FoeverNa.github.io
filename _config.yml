@@ -1,7 +1,7 @@
 # Site settings
 title: 나영원의 포트폴리오
 description: 포트폴리오입니다
-# baseurl: "/particle" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://foeverna.github.io" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
 # User settings
