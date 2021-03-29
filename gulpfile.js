@@ -1,91 +1,77 @@
-var gulp = require('gulp');
-var csso = require('gulp-csso');
-var uglify = require('gulp-uglify');
-var concat = require('gulp-concat');
-var sass = require('gulp-sass');
-var plumber = require('gulp-plumber');
-var cp = require('child_process');
-var imagemin = require('gulp-imagemin');
-var browserSync = require('browser-sync');
+const gulp = require("gulp");
+const gap = require("gulp-append-prepend");
 
-var jekyllCommand = (/^win/.test(process.platform)) ? 'jekyll.bat' : 'jekyll';
+gulp.task("licenses", async function() {
+  // this is to add Creative Tim licenses in the production mode for the minified js
+  await gulp
+    .src("build/static/js/*chunk.js", { base: "./" })
+    .pipe(
+      gap.prependText(`/*!
 
-/*
- * Build the Jekyll Site
- * runs a child process in node that runs the jekyll commands
- */
-gulp.task('jekyll-build', function (done) {
-	return cp.spawn(jekyllCommand, ['build'], {stdio: 'inherit'})
-		.on('close', done);
+=========================================================
+* Argon Design System React - v1.1.0
+=========================================================
+
+* Product Page: https://www.creative-tim.com/product/argon-design-system-react
+* Copyright 2020 Creative Tim (https://www.creative-tim.com)
+* Licensed under MIT (https://github.com/creativetimofficial/argon-design-system-react/blob/master/LICENSE.md)
+
+* Coded by Creative Tim
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+*/`)
+    )
+    .pipe(gulp.dest("./", { overwrite: true }));
+
+  // this is to add Creative Tim licenses in the production mode for the minified html
+  await gulp
+    .src("build/index.html", { base: "./" })
+    .pipe(
+      gap.prependText(`<!--
+
+=========================================================
+* Argon Design System React - v1.1.0
+=========================================================
+
+* Product Page: https://www.creative-tim.com/product/argon-design-system-react
+* Copyright 2020 Creative Tim (https://www.creative-tim.com)
+* Licensed under MIT (https://github.com/creativetimofficial/argon-design-system-react/blob/master/LICENSE.md)
+
+* Coded by Creative Tim
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+-->`)
+    )
+    .pipe(gulp.dest("./", { overwrite: true }));
+
+  // this is to add Creative Tim licenses in the production mode for the minified css
+  await gulp
+    .src("build/static/css/*chunk.css", { base: "./" })
+    .pipe(
+      gap.prependText(`/*!
+
+=========================================================
+* Argon Design System React - v1.1.0
+=========================================================
+
+* Product Page: https://www.creative-tim.com/product/argon-design-system-react
+* Copyright 2020 Creative Tim (https://www.creative-tim.com)
+* Licensed under MIT (https://github.com/creativetimofficial/argon-design-system-react/blob/master/LICENSE.md)
+
+* Coded by Creative Tim
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+*/`)
+    )
+    .pipe(gulp.dest("./", { overwrite: true }));
+  return;
 });
-
-/*
- * Rebuild Jekyll & reload browserSync
- */
-gulp.task('jekyll-rebuild', gulp.series(['jekyll-build'], function (done) {
-	browserSync.reload();
-	done();
-}));
-
-/*
- * Build the jekyll site and launch browser-sync
- */
-gulp.task('browser-sync', gulp.series(['jekyll-build'], function(done) {
-	browserSync({
-		server: {
-			baseDir: '_site'
-		}
-	});
-	done()
-}));
-
-/*
-* Compile and minify sass
-*/
-gulp.task('sass', function() {
-  return gulp.src('src/styles/**/*.scss')
-    .pipe(plumber())
-    .pipe(sass())
-    .pipe(csso())
-		.pipe(gulp.dest('assets/css/'))
-});
-
-/*
-* Compile fonts
-*/
-gulp.task('fonts', function() {
-	return gulp.src('src/fonts/**/*.{ttf,woff,woff2}')
-		.pipe(plumber())
-		.pipe(gulp.dest('assets/fonts/'))
-});
-
-/*
- * Minify images
- */
-gulp.task('imagemin', function() {
-	return gulp.src('src/img/**/*.{jpg,png,gif}')
-		.pipe(plumber())
-		.pipe(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true }))
-		.pipe(gulp.dest('assets/img/'))
-});
-
-/**
- * Compile and minify js
- */
-gulp.task('js', function() {
-	return gulp.src('src/js/**/*.js')
-		.pipe(plumber())
-		.pipe(concat('main.js'))
-		.pipe(uglify())
-		.pipe(gulp.dest('assets/js/'))
-});
-
-gulp.task('watch', function() {
-  gulp.watch('src/styles/**/*.scss', gulp.series(['sass', 'jekyll-rebuild']));
-  gulp.watch('src/js/**/*.js', gulp.series(['js', 'jekyll-rebuild']));
-  gulp.watch('src/fonts/**/*.{tff,woff,woff2}', gulp.series(['fonts']));
-  gulp.watch('src/img/**/*.{jpg,png,gif}', gulp.series(['imagemin']));
-  gulp.watch(['*html', '_includes/*html', '_layouts/*.html'], gulp.series(['jekyll-rebuild']));
-});
-
-gulp.task('default', gulp.series(['js', 'sass', 'fonts', 'browser-sync', 'watch']));
