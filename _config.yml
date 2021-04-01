@@ -18,15 +18,15 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: 나영원의 포트폴리오
-description: 'vCard & Resume Template'
+description: 'portfolio'
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://arlo-jekyll-theme.vercel.app" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://foeverna.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 
 logo: 
-  logo: 'img/logo/logo.png'
-  light: 'img/logo/light.png'
-  mobile: 'img/logo/mobile.png'
-favicon:  ''
+  logo: 'img/logo/myLogo.jpg'
+  light: 'img/logo/myLogo.jpg'
+  mobile: 'img/logo/myLogo.jpg'
+favicon:  'img/favicon/favicon.ico'
 
 vendor: 
   name: DUCOR
