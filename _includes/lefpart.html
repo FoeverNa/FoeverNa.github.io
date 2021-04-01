@@ -16,7 +16,7 @@
             <ul>
                 <li><a href="#home" {%- if page.url != '/' -%}onclick="window.location='{{ '/' | absolute_url }}#home'"{%- endif -%}>Home</a></li>
                 <li><a href="#about" {%- if page.url != '/' -%}onclick="window.location='{{ '/' | absolute_url }}#about'"{%- endif -%}>About</a></li>
-                <li><a href="#services" {%- if page.url != '/' -%}onclick="window.location='{{ '/' | absolute_url }}#services'"{%- endif -%}>Services</a></li>
+                <li><a href="#services" {%- if page.url != '/' -%}onclick="window.location='{{ '/' | absolute_url }}#services'"{%- endif -%}>Skills</a></li>
                 <li><a href="#portfolio" {%- if page.url != '/' -%}onclick="window.location='{{ '/' | absolute_url }}#portfolio'"{%- endif -%}>Portfolio</a></li>
                 <li><a href="#news" {%- if page.url != '/' -%}onclick="window.location='{{ '/' | absolute_url }}#news'"{%- endif -%}>News</a></li>
                 <li><a href="#contact" {%- if page.url != '/' -%}onclick="window.location='{{ '/' | absolute_url }}#contact'"{%- endif -%}>Contact</a></li>
@@ -26,7 +26,7 @@
             <div class="social">
                 <ul>
                     {%- for social in site.social_link -%}
-                    <li><a href="{{ social.link }}"><i class="{{ social.ion }}"></i></a></li>
+                    <li><a href="{{ social.link }}"><i class="{{ social.icon }}"></i></a></li>
                     {%- endfor -%}
                 </ul>
             </div>

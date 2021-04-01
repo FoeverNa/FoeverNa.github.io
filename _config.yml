@@ -17,7 +17,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Arlo
+title: 나영원의 포트폴리오
 description: 'vCard & Resume Template'
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://arlo-jekyll-theme.vercel.app" # the base hostname & protocol for your site, e.g. http://example.com
@@ -294,37 +294,6 @@ experiences:
 #################################
 ####### Pricing Tables ##########
 #################################
-pricing_title: 'PRICING'
-pricing_tagline: 'CHOOSE PLAN'
-
-pricing_table:
-  - name: "Small"
-    icon: "img/svg/icon.svg"
-    price: "300"
-    lines: >-
-        <li><p>Web Development</p></li>
-        <li><p>Creative Design</p></li>
-        <li><p>Photography</p></li>
-    url: "#"
-
-  - name: "Medium"
-    icon: "img/svg/small-rocket-ship-silhouette.svg"
-    price: "500"
-    lines: >-
-        <li><p>Web Development</p></li>
-        <li><p>Creative Design</p></li>
-        <li><p>Photography</p></li>
-    url: "#"
-
-  - name: "Professional"
-    icon: "img/svg/fire.svg"
-    price: "999"
-    lines: >-
-        <li><p>Web Development</p></li>
-        <li><p>Creative Design</p></li>
-        <li><p>Photography</p></li>
-    url: "#"
-
 ########### Fun Facts ###############
 fun_facts:
   - name: "47 Albumes Listened"
