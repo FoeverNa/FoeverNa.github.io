@@ -565,12 +565,12 @@ body.dark ::placeholder { /* Most modern browsers support this now. */
 }
 .arlo_tm_hero_header .hero_content .name_holder{margin-bottom: 9px;}
 .arlo_tm_hero_header .hero_content .name_holder h3{
-	color: #fff;
+	color: #ff214f;
 	text-transform: uppercase;
 	font-size: 45px;
 	font-weight: 700;
 }
-.arlo_tm_hero_header .hero_content .name_holder h3 span{color: #ff214f;}
+.arlo_tm_hero_header .hero_content .name_holder h3 span{color: #fff;}
 .arlo_tm_hero_header .hero_content .text_typing p{
 	color: #fff;
 	font-size: 19px;

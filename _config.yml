@@ -118,9 +118,9 @@ header:
 ###########################   Home / hero  ################################
 ###########################################################################
 
-first_name: Albert
-last_name: Walkers
-date_of_bath: '1990-07-01 00:00'
+first_name: 배우는개발자
+last_name: 나영원
+date_of_bath: '1989-07-01 00:00'
 email: 'mymail@gmail.com'
 phone: '+77 022 177 05 05'
 address: 'Ave 11, New York, USA'
@@ -207,6 +207,7 @@ professional_skills:
   
   - name: 'Photoshop'
     percentage: '85'
+
 ##########################################
 ################ portfolios ##############
 #########################################
@@ -251,15 +252,6 @@ portfolios:
     type: 'image'
     category: 'image'
     video_link: 
-
-############################################
-############## testimonial #################
-############################################
-testimonials:
-  - quote: 'We were looking for a logo with a touch of modernism. Arlo grasped our needs and produced a stunning design. Awesome to work with Arlo. Incredibly organized, easy to communicate with, responsive with next iterations.'
-    author_name: 'Steve Collins'
-    author_image: '/img/about/2.jpg'
-    author_profession: 'Photographer'
   
 #############################################
 ############ EXPERIENCE #####################
@@ -290,55 +282,4 @@ experiences:
     title: 'Ui/Ux Designer'
     description: 'Web development refers to building, creating, and an maintaining websites. It includes aspects such as web design, web programming, and database management.'
 
-  
-#################################
-####### Pricing Tables ##########
-#################################
-########### Fun Facts ###############
-fun_facts:
-  - name: "47 Albumes Listened"
-    icon: "la la-headphones"
-  - name: "15 Awards Won"
-    icon: "la la-trophy"
-  - name: "54 Projects Completed"
-    icon: "la la-lightbulb-o"
-  - name: "10 Countries Visited"
-    icon: "la la-flag-o"
-  - name: "50+ Books Readed"
-    icon: "la la-book"
-  - name: "100 000 Lines of Code"
-    icon: "la la-code"
-  - name: "49 Satisfied Customers"
-    icon: "la la-smile-o"
-  - name: "1250 km Cycled"
-    icon: "la la-bicycle"
-
-  
-
-############ Clients ##########
-clients:
-  - image: "images/clients/client_1.png"
-    name: ""
-    url: "#"
-  - image: "images/clients/client_2.png"
-    name: ""
-    url: "#"
-  - image: "images/clients/client_3.png"
-    name: ""
-    url: "#"
-  - image: "images/clients/client_4.png"
-    name: ""
-    url: "#"
-  - image: "images/clients/client_1.png"
-    name: ""
-    url: "#"
-  - image: "images/clients/client_2.png"
-    name: ""
-    url: "#"
-  - image: "images/clients/client_3.png"
-    name: ""
-    url: "#"
-  - image: "images/clients/client_4.png"
-    name: ""
-    url: "#"
   
