@@ -25,7 +25,7 @@ url: "https://foeverna.github.io/" # the base hostname & protocol for your site,
 logo: 
   logo: 'img/logo/myLogo.jpg'
   light: 'img/logo/myLogo.jpg'
-  mobile: 'img/logo/myLogo.jpg'
+  mobile: ''
 favicon:  'img/favicon/favicon.ico'
 
 vendor: 
@@ -161,8 +161,8 @@ social_link:
 #############################################
 ######### Our Services ######################
 #############################################
-our_services_title: 'Services'
-our_services_tagline: 'What I Do'
+our_services_title: 'Skills'
+our_services_tagline: 'What I Can Do'
 
 our_services:
   - name: "Web Development"
@@ -192,21 +192,21 @@ our_services:
 ##################################################################
 ################  professional_skills ############################
 ##################################################################
-professional_skill_title: 'In a <span>short time</span>, I have been able to achieve excellence in all areas of app and web development.'
-professional_skill_description: 'I provide cost-effective and high quality products to meet our Clients’ needs of timely delivery World Wide. I want to be local in a global world to be where our Customers need our services customers need our services.'
+professional_skill_title: '저는 <span>짧은 시간</span>, 성자하여 웹 백엔드 부분 기술들을 익혀 나갈 수 있었습니다..'
+professional_skill_description: '단순한 기능 구현보다는 안정성과 유연성에 관심이 있으며 테스트 주도 개발에 관심이 있습니다. '
 
 professional_skills:
-  - name: 'WordPress'
-    percentage: '90'
+  - name: 'Java'
+    percentage: '80'
   
-  - name: 'PHP / MYSQL'
-    percentage: '65'
+  - name: 'Spring / SpringBoot'
+    percentage: '70'
   
-  - name: 'HTML / CSS / JS'
-    percentage: '95'
+  - name: 'RMDB'
+    percentage: '60'
   
-  - name: 'Photoshop'
-    percentage: '85'
+  - name: 'AWS'
+    percentage: '60'
 
 ##########################################
 ################ portfolios ##############

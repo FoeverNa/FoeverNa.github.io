@@ -10,17 +10,7 @@
                 <h3>{{ site.our_services_title }}</h3>
             </div>
             <div class="service_inner">
-                <ul>
-                    {%- for service in site.our_services -%}
-                    <li  class="{%- if animation -%}wow fadeInUp{%- endif -%}" {%- if animation -%} data-wow-duration="0.8s" {%- endif -%} {%- if animation -%}data-wow-delay="0.{{ forloop.index | plus: 1 | times: 2 }}s" {%- endif -%}>
-                        <div class="inner">
-                            <img class="svg" src="{{ service.image | relative_url }}" alt="" />
-                            <h3>{{ service.name }}</h3>
-                            <p>{{ service.description }}</p>
-                        </div>
-                    </li>
-                    {%- endfor -%}
-                </ul>
+                
                 <div class="arlo_tm_progress_wrap">
                     <div class="progress_wrap_inner">
                         <div class="left">
@@ -47,6 +37,17 @@
                         </div>
                     </div>
                 </div>
+                <ul>
+                    {%- for service in site.our_services -%}
+                    <li  class="{%- if animation -%}wow fadeInUp{%- endif -%}" {%- if animation -%} data-wow-duration="0.8s" {%- endif -%} {%- if animation -%}data-wow-delay="0.{{ forloop.index | plus: 1 | times: 2 }}s" {%- endif -%}>
+                        <div class="inner">
+                            <img class="svg" src="{{ service.image | relative_url }}" alt="" />
+                            <h3>{{ service.name }}</h3>
+                            <p>{{ service.description }}</p>
+                        </div>
+                    </li>
+                    {%- endfor -%}
+                </ul>
             </div>
         </div>
     </div>
