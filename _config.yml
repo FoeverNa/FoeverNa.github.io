@@ -120,15 +120,15 @@ header:
 
 first_name: 배우는개발자
 last_name: 나영원
-date_of_bath: '1989-07-01 00:00'
-email: 'mymail@gmail.com'
-phone: '+77 022 177 05 05'
-address: 'Ave 11, New York, USA'
-interests: 'Playstation, Reading'
-study: 'Univercity of Chicago'
-degree: 'Master'
-cv_download_link: '#'
-user_intro: ' I am a Web Developer, and I&#39;m very passionate and dedicated to my work. With 20 years experience as a professional Web developer, I have acquired the skills and knowledge necessary to make your project a success. I enjoy every step of the design process, from discussion and collaboration.'
+date_of_bath: '1989-03-02 00:00'
+email: 'fovena@gmail.com'
+phone: '010 6229 5429'
+address: '경기도 안양시 동안구'
+github: 'github.com/FoeverNa'
+study: '건국대학교 경영학 학사'
+blog: 'velog.io/@foeverna'
+cv_download_link: 'https://drive.google.com/file/d/17eeIEEkXBV_QFkny0hFVxMrYnenoCaEn/view?usp=sharing'
+user_intro: ' 남들 보다 늦은 시기에 개발 분야에 입문했지만 그만 큼 더 열정과 열심을 가지고 성장하는 개발자가되기 위해 노력하고 빠르게 성장하고 있습니다. 다양한 분야에서 다양한 사람들을 만나는 경험을 통해 스프트웨어 기술을 통해 세상을 더 편리하게 만드는 것과 협업에 관심을 가지고 있습니다. 추후수정바랍니다'
 
 
 freelance_hire: true

@@ -33,8 +33,7 @@
                         </div>
                         <div class="text">
                             <p>
-                                안녕하세요 저는
-                                <span>{{ site.first_name }} </span> 나영원 입니다. 
+                                안녕하세요 저는 나영원 입니다. 
                                {{ site.user_intro }}
                             </p>
                         </div>
@@ -42,14 +41,14 @@
                             <ul>
                                 <li>
                                     <img class="svg" src="{{ 'img/svg/gift.svg' | relative_url }}" alt="" />
-                                    <span><label>생년월일:</label> {{ site.date_of_bath | date: ' %b %d, %Y' }}</span>
+                                    <span><label>생년월일:</label> 1989년 3월 2일</span>
                                 </li>
                                 <li>
                                     <img class="svg" src="{{ 'img/svg/calendar-4.svg' | relative_url }}" alt="" />
                                     {%- assign currentYear = site.time | date: "%Y" -%}
                                     {%- assign bathYear = site.date_of_bath | date: "%Y" -%}
                                     
-                                    <span><label>나이:</label> {{  currentYear | minus: bathYear }}</span>
+                                    <span><label>나이:</label> {{  currentYear | minus: bathYear }}세</span>
                                 </li>
                                 <li>
                                     <img class="svg" src="{{ 'img/svg/location-1.svg' | relative_url }}" alt="" />
@@ -59,17 +58,9 @@
                                     </span>
                                 </li>
                                 <li>
-                                    <img class="svg" src="{{ 'img/svg/github-logo.svg' | relative_url }}" alt="" />
-                                    <span><label>github repo:</label> {{ site.interests }}</span>
-                                </li>
-                                <li>
                                     <img class="svg" src="{{ 'img/svg/study-5.svg' | relative_url }}" alt="" />
                                     <span><label>최종학력:</label> <a class="href_location" href="#">{{ site.study }} </a></span>
                                 </li>
-                                <li>
-                                    <img class="svg" src="{{ 'img/svg/degree-1.svg' | relative_url }}" alt="" />
-                                    <span><label>전공:</label> {{ site.degree }}</span>
-                                </li>	
                                 <li>
                                     <img class="svg" src="{{ 'img/svg/message-3.svg' | relative_url }}" alt="" />
                                     <span><label>메일주소:</label> <a href="mailto:{{ site.email }}">{{ site.email }}</a></span>
@@ -78,12 +69,20 @@
                                     <img class="svg" src="{{ 'img/svg/call-2.svg' | relative_url }}" alt="" />
                                     <span><label>전화번호:</label> <a href="tel:{{ site.phone }}">{{ site.phone }}</a></span>
                                 </li>
+                                <li>
+                                    <img class="svg" src="{{ 'img/svg/github-logo.svg' | relative_url }}" alt="" />
+                                    <span><label>Github:</label> <a href="http://{{ site.github }}">{{ site.github }}</a> </span>
+                                </li>
+                                <li>
+                                    <img class="svg" src="{{ 'img/svg/blog-5.svg' | relative_url }}" alt="" />
+                                    <span><label>블로그:</label> <a href="http://{{ site.blog }}">{{ site.blog }}</a> </span>
+                                </li>
                             </ul>
                         </div>
                         <div class="buttons">
                             <ul>
-                                <li><a href="{{ site.cv_download_link }}"><span>Download CV</span></a></li>
-                                <li><a href="#"><span>Send Message</span></a></li>
+                                <li><a href="{{ site.cv_download_link }}"><span>이력서 보기</span></a></li>
+                                <li><a href="#"><span>이버튼어떻게활용할까</span></a></li>
                             </ul>
                         </div>
                     </div>
