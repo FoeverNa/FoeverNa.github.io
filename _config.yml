@@ -128,7 +128,7 @@ github: 'github.com/FoeverNa'
 study: '건국대학교 경영학 학사'
 blog: 'velog.io/@foeverna'
 cv_download_link: 'https://drive.google.com/file/d/17eeIEEkXBV_QFkny0hFVxMrYnenoCaEn/view?usp=sharing'
-user_intro: ' 남들 보다 늦은 시기에 개발 분야에 입문했지만 그만 큼 더 열정과 열심을 가지고 성장하는 개발자가되기 위해 노력하고 빠르게 성장하고 있습니다. 다양한 분야에서 다양한 사람들을 만나는 경험을 통해 스프트웨어 기술을 통해 세상을 더 편리하게 만드는 것과 협업에 관심을 가지고 있습니다. 추후수정바랍니다'
+user_intro: '저에게 일이란 남들을 도움으로써 나에게도 도움이 되는 것이라고 생각하며 살아왔습니다. 하지만 일해왔던 분야에서 한계를 느꼈고 문득 우리 일상생활이 되어버린 웹 서비스들이 정말 나에게 큰도움이 된다는 생각해 보게 되었습니다. 그렇게 웹 프로그래밍에 관심을 갖게 되었고 좋은 서비스를 개발함으로 다수의 사람들에게 큰도움을 줄수있겠다는 생각을 하게 되었습니다. 이후 하던일을 정리하고 개발자가 되기 위해 공부를 시작하였고 늦게 시작하였기 때문에 더욱 노력하고 있습니다.'
 
 
 freelance_hire: true
@@ -232,24 +232,24 @@ experience_description: ''
 
 educations:
   - year: '2009 - 2013'
-    title: 'University of Chicago'
-    description: 'Independent study is a form of education offered by many high schools, colleges, and other educational institutions. It is sometimes referred to as directed study.'
+    title: '패스트캠퍼스'
+    description: 'Java 백엔드 과정 수료'
   - year: '2006 - 2009'
-    title: 'Christofer College'
-    description: 'Independent study is a form of education offered by many high schools, colleges, and other educational institutions. It is sometimes referred to as directed study.'
+    title: '건국대학교'
+    description: '경영학 전공'
   - year: '1996 - 2006'
-    title: 'Secondary School'
-    description: 'Independent study is a form of education offered by many high schools, colleges, and other educational institutions. It is sometimes referred to as directed study.'
+    title: '평촌고등학교'
+    description: ''
 
 experiences:
-  - year: '2018 - Current'
-    title: 'Web Developer'
-    description: 'Web development refers to building, creating, and an maintaining websites. It includes aspects such as web design, web programming, and database management.'
-  - year: '2015 - 2018'
-    title: 'App Developer'
-    description: 'Web development refers to building, creating, and an maintaining websites. It includes aspects such as web design, web programming, and database management.'
+  - year: '2019 - 2020'
+    title: '건강식품판매'
+    description: '가족들이 함꼐 운영하고 있는 건강식품 판매업을 도와드리며 고객응대, 파트너 교육자료 제작, 행사 준비 등의 일을 하였습니다'
+  - year: '2016 - 2019'
+    title: '해외단기취업'
+    description: '미국에서 일하면서 생활해볼 기회가 생겨 GreenTreeCleaner에서 일하면서 일을 하였고 3년가까이 외국생활을 하며 새로운 문화에 대한 경험들을 쌓을 수 이었다 '
   - year: '2013 - 2015'
-    title: 'Ui/Ux Designer'
-    description: 'Web development refers to building, creating, and an maintaining websites. It includes aspects such as web design, web programming, and database management.'
+    title: '초등 저학년 국어담당'
+    description: '대학시절 교회에서 운영하는 국제학교에서 방학마다 봉사를 하며 가깝게 지내다가 자연스럽게 제안을 받아 활동하였다'
 
   

@@ -10,14 +10,14 @@
             <div class="container">
                 <div class="arlo_title_holder">
                     <span>Main Info</span>
-                    <h3>About</h3>
+                    <h3>About Me</h3>
                 </div>
                 <div class="about_inner">
                     <div class="{%- if animation -%}leftbox wow fadeInLeft {%- else -%}leftbox {%- endif -%}" {%- if animation -%}data-wow-duration="0.8s"{%- endif -%}>
                         <div class="about_image_wrap parallax" data-relative-input="true">
                             <div class="image layer" data-depth="0.1">
                                 <img src="{{ 'img/about/550x650.jpg' | relative_url }}" alt="" />
-                                <div class="inner" data-img-url="{{ 'img/about/about2.jpg' | relative_url }}"></div>
+                                <div class="inner" data-img-url="{{ 'img/about/about4.jpg' | relative_url }}"></div>
                             </div>
                             <div class="border layer" data-depth="0.2">
                                 <img src="{{ 'img/about/550x650.jpg' | relative_url }}" alt="" />
@@ -27,13 +27,10 @@
                     </div>
                     <div  class="{%- if animation -%}rightbox wow fadeInRight {%- else -%} rightbox {%- endif -%}" {%- if animation -%}data-wow-duration="0.8s"{%- endif -%} >
                         <div class="about_title">
-                            <h3>Hi! I'm YoungWon Na and 
-                                <span class="arlo_tm_animation_text_word"></span>
-                            </h3>
+                            <h3>"안녕하세요. 신입 백엔드 개발자가 되고 싶은 나영원입니다."</h3>
                         </div>
                         <div class="text">
                             <p>
-                                안녕하세요 저는 나영원 입니다. 
                                {{ site.user_intro }}
                             </p>
                         </div>
@@ -54,28 +51,28 @@
                                     <img class="svg" src="{{ 'img/svg/location-1.svg' | relative_url }}" alt="" />
                                     <span>
                                         <label>주소:</label> 
-                                        <a class="href_location" href="#">{{ site.address }}</a>
+                                        <a class="href_location" href="#" target='_blank'>{{ site.address }}</a>
                                     </span>
                                 </li>
                                 <li>
                                     <img class="svg" src="{{ 'img/svg/study-5.svg' | relative_url }}" alt="" />
-                                    <span><label>최종학력:</label> <a class="href_location" href="#">{{ site.study }} </a></span>
+                                    <span><label>최종학력:</label> <a class="href_location" href="#" target='_blank'>{{ site.study }} </a></span>
                                 </li>
                                 <li>
                                     <img class="svg" src="{{ 'img/svg/message-3.svg' | relative_url }}" alt="" />
-                                    <span><label>메일주소:</label> <a href="mailto:{{ site.email }}">{{ site.email }}</a></span>
+                                    <span><label>메일주소:</label> <a href="mailto:{{ site.email }}" target='_blank'>{{ site.email }}</a></span>
                                 </li>
                                 <li>
                                     <img class="svg" src="{{ 'img/svg/call-2.svg' | relative_url }}" alt="" />
-                                    <span><label>전화번호:</label> <a href="tel:{{ site.phone }}">{{ site.phone }}</a></span>
+                                    <span><label>전화번호:</label> <a href="tel:{{ site.phone }}" target='_blank'>{{ site.phone }}</a></span>
                                 </li>
                                 <li>
                                     <img class="svg" src="{{ 'img/svg/github-logo.svg' | relative_url }}" alt="" />
-                                    <span><label>Github:</label> <a href="http://{{ site.github }}">{{ site.github }}</a> </span>
+                                    <span><label>Github:</label> <a href="http://{{ site.github }}" target='_blank'>{{ site.github }}</a> </span>
                                 </li>
                                 <li>
                                     <img class="svg" src="{{ 'img/svg/blog-5.svg' | relative_url }}" alt="" />
-                                    <span><label>블로그:</label> <a href="http://{{ site.blog }}">{{ site.blog }}</a> </span>
+                                    <span><label>블로그:</label> <a href="http://{{ site.blog }}" target='_blank'>{{ site.blog }}</a> </span>
                                 </li>
                             </ul>
                         </div>
