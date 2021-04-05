@@ -14,10 +14,10 @@
                     <div class="progress_wrap_inner">
                         <div class="left">
                             <div class="main_title">
-                                <h3>{{ site.professional_skill_title }}</h3>
+                                <!-- <h3>저는 지금 까지 이런 것들을 준비해왔습니다.</h3> -->
                             </div>
                             <div class="text">
-                                <p>{{ site.professional_skill_description }}</p>
+                                <p>패트스캠퍼스의 Java 백엔드 과정을 수료하며  Java 문법과 컴퓨터 사이언스 및 웹개발 전반에 관한 기초 과목들을 수강하였고,  Spring/SpringBoot 프레임워크 활용한 REST API 서버 개발에 관하여 공부하였습니다. 이후 프론트엔드반과 진행한 프로젝를 통하여 Aws와 Github Actions를 활용하여 서버를 배포해본경험이 있으며 Github, GitFlow, Github Projects등의 협업도구들을 활용해 보았습니다. 현재는 개인 및 팀프로젝트를 진행하며 더 나은 서버개발을 하기 위해 경험을 쌓고 있습니다.</p>
                             </div>
                         </div>
                         <div class="right">
@@ -42,7 +42,7 @@
                         <div class="inner">
                             <img class="svg" src="{{ service.image | relative_url }}" alt="" />
                             <h3>{{ service.name }}</h3>
-                            <p>  </p>
+                            <p>{{ service.description }}</p>
                         </div>
                     </li>
                     {%- endfor -%}
