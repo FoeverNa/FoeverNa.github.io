@@ -216,7 +216,7 @@ portfolio_tagline: 'Portfolios'
 portfolio_categories: ['팀프로젝트', '개인프로젝트', 'image']
 
 portfolios: 
-  - main_image: 'img/portfolio/sweetypie.jpg'
+  - main_image: 'img/portfolio/sweetypie3.jpg'
     title: 'Airbnb클론프로젝트'
     type: '팀프로젝트'
     category: '팀프로젝트'
