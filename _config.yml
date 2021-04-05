@@ -175,19 +175,19 @@ our_services:
   
   - name: 'MySQL'
     image: 'img/svg/mysql.svg'
-    description: 'DB constarint를 이해하고 있으며 쿼리문을 통해 데이터를 가져올 수 있습니다'
+    description: '관계형 데이터베이스에 대한 이해가 있고 주요 SQL 구문을 사용할 수 있습니다'
   
   - name: 'JPA'
     image: 'img/svg/jpa2.svg'
-    description: '영속성 컨텍스트에 대해 이해하고 있으며 프로젝트를 통해 활용해본 경험이있습니다. NativeQury 및 QueryDsl를 사용해 '
+    description: '영속성 컨텍스트에 대해 이해하고 있으며 QueryDsl를 프로젝트를 통해 활용해본 경험이있습니다.'
 
   - name: 'AWS'
     image: 'img/svg/aws.svg'
-    description: 'AWS (EC2, S3, Deploy)를 이용한 배포 경험과 Route53을 이용한 도메인 연결을 해보았습니다'
+    description: 'AWS (EC2, S3, Deploy)를 이용한 서버 배포 경험과 Https사용을 위해 Route53을 활용해 보았습니다'
 
   - name: 'GitHub'
     image: 'img/svg/github2.svg'
-    description: 'GitHub을 이용한 버전관리와 GiFlow, Projcets, Milstone을 이용한 프로젝트관리 경험이 있습니다'
+    description: 'GitHub을 이용한 형상관리와 Projcets, Milstone을 이용한 프로젝트관리 경험이 있습니다'
 
 ##################################################################
 ################  professional_skills ############################
