@@ -849,7 +849,7 @@ body.dark ::placeholder { /* Most modern browsers support this now. */
 	height: auto;
 	clear: both;
 	float: left;
-	padding-top: 90px;
+	padding-top: 20px;
 }
 .arlo_tm_services .service_inner ul{
 	margin: 0px 0px 0px -50px;
